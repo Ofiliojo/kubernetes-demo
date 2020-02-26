@@ -1,4 +1,4 @@
-module github.com/stockx/tfcloud
+module github.com/stockx/kubernetes-demo
 
 go 1.13
 
