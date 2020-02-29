@@ -4,6 +4,9 @@ metadata:
   name: kubernetes-demo
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: kubernetes-demo
   template:
     metadata:
       labels:
