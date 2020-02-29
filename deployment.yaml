@@ -15,5 +15,6 @@ spec:
       containers:
       - name: kubernetes-demo
         image: ofiliojo/kubernetes-demo:1.0.0
+        command: ["/usr/local/bin/app"]
         ports:
         - containerPort: 8080
