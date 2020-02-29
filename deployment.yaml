@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubernetes-demo
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: kubernetes-demo
+    spec:
+      containers:
+      - name: kubernetes-demo
+        image: ofiliojo/kubernetes-demo:1.0.0
+        ports:
+        - containerPort: 8080
